@@ -9,6 +9,7 @@ Run clojure on your EV3!
 - A Lego Mindstorms EV3 (obviously)
 - A 2GB micro SD card
 - leinigen (probably some variant of 2)
+- [lein-shell](https://github.com/hyPiRion/lein-shell) for ease-of-use
 
 ### Setting Up
 
@@ -18,9 +19,9 @@ for installing the leJOS kernel onto your SD card so you can boot your
 EV3 into the leJOS operating system.  Once you have all that working,
 and you are connected to your EV3 via USB cable or via wifi, you just
 need to clone this git repository, then run `lein uberjar` and (if
-connected via USB) `lein pushev3`.  If you're connected via wifi, then
-you should scp the uberjar which should be `target/ev3nrepl.jar` onto
-your EV3.
+connected via USB _AND_ you have lein-shell) then `lein pushev3`.  If
+you're connected via wifi, then you should scp the uberjar which
+should be `target/ev3nrepl.jar` onto your EV3.
 
 Now, ssh into the EV3, and run `jrun -jar ev3nrepl.jar`.  Now, wait.
 The jvm takes a bit of time to start up on the EV3 and a clojure repl
