@@ -8,4 +8,5 @@
   :aliases {"pushev3" ["shell" "scp" "target/ev3nrepl.jar" "root@10.0.1.1:"]}
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [org.clojure/tools.nrepl "0.2.3"]
-                 [org.clojars.earthlingzephyr/lejos-ev3 "0.5.0-SNAPSHOT"]])
+                 [org.clojars.earthlingzephyr/lejos-ev3 "0.5.0-SNAPSHOT"]]
+  :plugins [[lein-shell "0.3.0"]])
