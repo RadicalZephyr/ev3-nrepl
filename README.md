@@ -19,7 +19,7 @@ for installing the leJOS kernel onto your SD card so you can boot your
 EV3 into the leJOS operating system.  Once you have all that working,
 and you are connected to your EV3 via USB cable or via wifi, you just
 need to clone this git repository, then run `lein uberjar` and (if
-connected via USB _AND_ you have lein-shell) then `lein pushev3`.  If
+connected via USB) then `lein pushev3`.  If
 you're connected via wifi, then you should scp the uberjar which
 should be `target/ev3nrepl.jar` onto your EV3.
 
@@ -37,7 +37,7 @@ Happy roboting!
 
 ## License
 
-Copyright © 2013 FIXME
+Copyright © 2013 Geoff Shannon
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
