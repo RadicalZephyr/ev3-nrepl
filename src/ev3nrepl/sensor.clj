@@ -1,5 +1,5 @@
 (ns ev3nrepl.sensor
-  (:import [lejos.hardware.port.SensorPort]
+  (:import lejos.hardware.port.SensorPort
            (lejos.hardware.sensor EV3ColorSensor
                                   EV3GyroSensor
                                   EV3IRSensor
