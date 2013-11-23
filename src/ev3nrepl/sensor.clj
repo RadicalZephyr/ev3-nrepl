@@ -6,6 +6,10 @@
                                   EV3TouchSensor
                                   EV3UltrasonicSensor)))
 
+(def s1 (atom nil))
+(def s2 (atom nil))
+(def s3 (atom nil))
+(def s4 (atom nil))
 
 (defn resolve-port [port]
   (eval (symbol (str "SensorPort/S" port))))
