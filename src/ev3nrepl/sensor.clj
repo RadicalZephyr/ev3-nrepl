@@ -28,3 +28,9 @@
 
 (defn init-ultrasonic [port]
   (EV3UltrasonicSensor. (resolve-port port)))
+
+(defn get-distance [ultra]
+  (let [arr (float-array 1)
+        sp (.getDistanceMode ultra)]
+    (.fetchSample sp arr 0)
+    (aget arr 0)))
